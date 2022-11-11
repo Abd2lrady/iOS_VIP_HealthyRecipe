@@ -1,0 +1,8 @@
+search: #84bfde
+borders: #000000
+cellText: #ffffff
+cell: #00563b
+suggestionCell: #004953
+selectedFilter: #00563b
+unselectedFilter: #84bfde
+
