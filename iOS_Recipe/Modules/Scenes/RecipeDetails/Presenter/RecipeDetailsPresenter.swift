@@ -30,11 +30,16 @@ extension RecipeDetailsPresenter: RecipeDetailsPresenterProtocol {
     }
     
     private func presentRecipe(recipe: RecipeEntity) {
+        
+        let wieghtToCal = "\(recipe.recipe.totalWeight) / \(recipe.recipe.calories)"
+        
         let viewModel = RecipeDetailsModel.ViewModel(title: recipe.recipe.label,
                                                      source: recipe.recipe.source,
                                                      imgUrl: recipe.recipe.url,
-                                                     ingredients: recipe.recipe.ingredientLines)
-        
+                                                     ingredients: recipe.recipe.ingredientLines,
+                                                     weightToCal: wieghtToCal,
+                                                     time: "\(recipe.recipe.totalTime)")
+                                                    
         view?.showRecipeDetails(recipe: viewModel)
     }
 }

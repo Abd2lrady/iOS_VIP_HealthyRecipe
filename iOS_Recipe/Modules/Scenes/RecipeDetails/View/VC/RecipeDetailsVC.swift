@@ -13,6 +13,8 @@ class RecipeDetailsVC: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var recipeImg: UIImageView!
     
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var weightToCalLabel: UILabel!
     @IBOutlet private weak var _ingredientListTV: UITableView!
     
     var interactor: RecipeDetailsInteractorProtocol?
@@ -41,6 +43,10 @@ class RecipeDetailsVC: UIViewController {
     func configRecipeWebsiteButton() {
         titleLabel.font = UIFont(font: Fonts.JosefinSans.bold, size: 16)
         titleLabel.textColor = Colors.cellText.color
+        timeLabel.font = UIFont(font: Fonts.JosefinSans.bold, size: 16)
+        timeLabel.textColor = Colors.cellText.color
+        weightToCalLabel.font = UIFont(font: Fonts.JosefinSans.bold, size: 16)
+        weightToCalLabel.textColor = Colors.cellText.color
         recipeWebsiteButton.layer.cornerRadius = 7
         recipeWebsiteButton.layer.borderColor = Colors.borders.color.cgColor
         recipeWebsiteButton.layer.borderWidth = 1

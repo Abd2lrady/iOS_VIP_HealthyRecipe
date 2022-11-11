@@ -21,6 +21,8 @@ enum RecipeDetailsModel {
         let source: String
         let imgUrl: String
         let ingredients: [String]
+        let weightToCal: String
+        let time: String
     }
     
 }

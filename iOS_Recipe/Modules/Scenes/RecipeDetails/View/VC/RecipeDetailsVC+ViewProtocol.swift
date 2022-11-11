@@ -20,7 +20,8 @@ extension RecipeDetailsVC: RecipeDetailsViewProtocol {
     
         titleLabel.text = recipe.title
         setIngredient(ingredient: recipe.ingredients)
-        
+        weightToCalLabel.text = recipe.weightToCal
+        timeLabel.text = recipe.time
         guard let imgURL = URL(string: recipe.imgUrl) else { return }
         let imgResource = ImageResource(downloadURL: imgURL, cacheKey: recipe.imgUrl)
         recipeImg.kf.setImage(with: imgResource,
