@@ -65,7 +65,8 @@ extension SearchRecipeInteractor: SearchRecipeInteractorProtocol {
     }
     
     private func saveLastSearch(query: String) {
-        var lastSearches: [String] = UserDefaults.standard.stringArray(forKey: Constants.UserDefaultsKeys.lastSearches) ?? []
+        var lastSearches: [String] =
+        UserDefaults.standard.stringArray(forKey: Constants.UserDefaultsKeys.lastSearches) ?? []
 
             lastSearches.append(query)
             UserDefaults.standard.set(lastSearches,

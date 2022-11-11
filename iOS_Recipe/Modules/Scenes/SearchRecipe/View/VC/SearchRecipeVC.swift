@@ -127,7 +127,7 @@ extension SearchRecipeVC {
     }
     
     func beginTyping() {
-        showList()
+        showLastSearchs()
     }
     
     func endTyping(query: String) {

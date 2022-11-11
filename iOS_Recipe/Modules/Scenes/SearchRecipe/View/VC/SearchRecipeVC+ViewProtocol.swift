@@ -10,6 +10,7 @@ import UIKit
 extension SearchRecipeVC: SearchRecipeViewProtocol {
     
     func loadLastSearchs(lastSearchs: [String]) { suggestionListDataSource.initLastSearches(lastSearchs: lastSearchs)
+//        showLastSearchs()
     }
     
     func showLastSearchs() {
