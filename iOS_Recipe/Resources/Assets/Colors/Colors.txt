@@ -5,4 +5,7 @@ cell: #00563b
 suggestionCell: #004953
 selectedFilter: #00563b
 unselectedFilter: #84bfde
+recipeWebsiteButton: #00563b
+recipeWebsiteButtonTitle: #ffffff
+
 

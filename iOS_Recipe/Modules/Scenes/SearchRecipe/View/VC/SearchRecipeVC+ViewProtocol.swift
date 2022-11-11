@@ -7,6 +7,15 @@
 
 import UIKit
 
+protocol SearchRecipeViewProtocol: AnyObject {
+    
+    func showRecipes(recipe: [SearchRecipeModel.ViewModel])
+    func showNoResult()
+    func hideNoResult()
+    func showLastSearchs()
+    func loadLastSearchs(lastSearchs: [String])
+}
+
 extension SearchRecipeVC: SearchRecipeViewProtocol {
     
     func loadLastSearchs(lastSearchs: [String]) { suggestionListDataSource.initLastSearches(lastSearchs: lastSearchs)
@@ -49,8 +58,4 @@ extension SearchRecipeVC: SearchRecipeViewProtocol {
         suggestionList.reloadData()
     }
     
-    func routeToRecipeDetails(recipe: Recipe) {
-        print("route to details")
-
-    }
 }

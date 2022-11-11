@@ -27,6 +27,12 @@ internal struct Colors {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffffff"></span>
   /// Alpha: 100% <br/> (0xffffffff)
   internal static let cellText = Colors(rgbaValue: 0xffffffff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#00563b"></span>
+  /// Alpha: 100% <br/> (0x00563bff)
+  internal static let recipeWebsiteButton = Colors(rgbaValue: 0x00563bff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffffff"></span>
+  /// Alpha: 100% <br/> (0xffffffff)
+  internal static let recipeWebsiteButtonTitle = Colors(rgbaValue: 0xffffffff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#84bfde"></span>
   /// Alpha: 100% <br/> (0x84bfdeff)
   internal static let search = Colors(rgbaValue: 0x84bfdeff)

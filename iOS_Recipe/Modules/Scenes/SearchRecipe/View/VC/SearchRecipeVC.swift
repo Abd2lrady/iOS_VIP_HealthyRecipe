@@ -99,7 +99,6 @@ extension SearchRecipeVC {
     }
     
     func hideList(query: String) {
-        suggestionListDataSource.addSuggestion(query: query)
         interactor?.interact(request: .addSearchSuggestion(search: query))
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveLinear) {
             self.suggestListHeight = 0
@@ -132,6 +131,7 @@ extension SearchRecipeVC {
     
     func endTyping(query: String) {
         hideList(query: query)
+        suggestionListDataSource.addSuggestion(query: query)
         let filter = filterListDelegate.selectedFilter
         guard !query.isEmpty else { return }
         view.showActivityIndicator()
@@ -153,7 +153,8 @@ extension SearchRecipeVC {
         recipeListTV.setBorders(with: 2, color: Colors.borders.color)
         recipeListTV.isHidden = true
         recipeListDelegate.selectedRecipe = {
-            print("recipe is \($0)")
+            print("here routing")
+            self.router?.routeToRecipeDetails(recipeIndex: $0)
          }
     }
 }

@@ -18,6 +18,8 @@ internal enum Strings {
   internal static let lowSugar = Strings.tr("Localizable", "lowSugar", fallback: "Low Sugar")
   /// Sorry no Recipes for your query
   internal static let noResult = Strings.tr("Localizable", "NoResult", fallback: "Sorry no Recipes for your query")
+  /// Recipe Website
+  internal static let recipeWebsiteButtonTitle = Strings.tr("Localizable", "recipeWebsiteButtonTitle", fallback: "Recipe Website")
   /// Enter Your Recipe Here
   internal static let searchBarPlaceholder = Strings.tr("Localizable", "SearchBarPlaceholder", fallback: "Enter Your Recipe Here")
   /// Search

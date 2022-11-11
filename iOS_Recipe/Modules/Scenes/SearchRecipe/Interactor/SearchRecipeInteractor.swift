@@ -58,6 +58,7 @@ extension SearchRecipeInteractor: SearchRecipeInteractorProtocol {
             switch result {
             case .success(let response):
                 self?.presenter.present(response: SearchRecipeModel.Response.recipes(response))
+                self?.recipes.append(contentsOf: response)
             case .failure(let error):
                 print(error)
             }
@@ -68,7 +69,9 @@ extension SearchRecipeInteractor: SearchRecipeInteractorProtocol {
         var lastSearches: [String] =
         UserDefaults.standard.stringArray(forKey: Constants.UserDefaultsKeys.lastSearches) ?? []
 
-            lastSearches.append(query)
+        guard !lastSearches.contains(query) else { return }
+                
+        lastSearches.append(query)
             UserDefaults.standard.set(lastSearches,
                                       forKey: Constants.UserDefaultsKeys.lastSearches)
         }
