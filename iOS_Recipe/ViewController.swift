@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let service = RecipeService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
                 print(data)
             }
         }
+
     }
 
 }
