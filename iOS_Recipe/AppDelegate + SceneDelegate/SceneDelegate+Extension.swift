@@ -10,9 +10,9 @@ import UIKit
 extension SceneDelegate {
     func bootApp(scene: UIWindowScene) {
         let window = UIWindow(windowScene: scene)
-        let view = ViewController()
+        let view = SearchRecipeConfigurator.configurate()
+        
         let navigator = UINavigationController(rootViewController: view)
-
         window.rootViewController = navigator
         self.window = window
         self.window?.makeKeyAndVisible()

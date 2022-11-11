@@ -13,4 +13,9 @@ enum Constants {
             static let baseURL = Configuration.baseURLString
         }
     }
+    
+    enum UserDefaultsKeys {
+        static let lastSearches = "lastSearches"
+    }
+
 }
