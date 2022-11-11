@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum APIError: Error {
-    case noStatusCode
+    case statusCodeError(Int?)
     case noInternet
 }
 
@@ -59,7 +59,7 @@ class APIClient {
 
             guard let statusCode = response.response?.statusCode
             else {
-                completionHandler(.failure(APIError.noStatusCode))
+                completionHandler(.failure(APIError.statusCodeError(nil)))
                 return
             }
 
@@ -101,7 +101,7 @@ class APIClient {
                 
                 guard let statusCode = response.response?.statusCode
                 else {
-                    continuation.resume(throwing: APIError.noStatusCode)
+                    continuation.resume(throwing: APIError.statusCodeError(nil))
                     return
                 }
                 if  (200 ..< 300) ~= statusCode,
