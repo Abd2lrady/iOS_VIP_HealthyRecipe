@@ -35,7 +35,7 @@ extension RecipeDetailsPresenter: RecipeDetailsPresenterProtocol {
         
         let viewModel = RecipeDetailsModel.ViewModel(title: recipe.recipe.label,
                                                      source: recipe.recipe.source,
-                                                     imgUrl: recipe.recipe.url,
+                                                     imgUrl: recipe.recipe.image,
                                                      ingredients: recipe.recipe.ingredientLines,
                                                      weightToCal: wieghtToCal,
                                                      time: "\(recipe.recipe.totalTime)")

@@ -32,8 +32,11 @@ extension RecipeListTVDataSource: UITableViewDataSource {
         cell.heathyLabels = recipe.labels
         cell.sourceLabel?.text = recipe.source
         cell.titleLabel?.text = recipe.title
-        let imgURL = URL(string: recipe.imgUrl)
-        cell.recipeImg?.kf.setImage(with: imgURL)
+        
+        guard let imgURL = URL(string: recipe.imgUrl) else { return }
+        let imgResource = ImageResource(downloadURL: imgURL, cacheKey: recipe.imgUrl)
+        cell.recipeImg?.kf.setImage(with: imgResource,
+                                    options: [.fromMemoryCacheOrRefresh])
     }
     
 }
