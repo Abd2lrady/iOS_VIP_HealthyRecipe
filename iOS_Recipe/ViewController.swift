@@ -13,7 +13,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .blue
-        print(Configuration.current)
+        APIClient.shared.request(for: RecipeRouter.getRecipe(query: "chicken", filter: nil)) { result in
+            switch result {
+            case .failure(let error):
+                switch error {
+                case APIError.noInternet:
+                    print("noInternet")
+                default:
+                    print(error.localizedDescription)
+                }
+            case .success(let data):
+                print(data)
+            }
+        }
     }
 
 }
