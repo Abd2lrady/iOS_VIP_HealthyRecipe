@@ -153,9 +153,17 @@ extension SearchRecipeVC {
         recipeListTV.setBorders(with: 2, color: Colors.borders.color)
         recipeListTV.isHidden = true
         recipeListDelegate.selectedRecipe = {
-            print("here routing")
             self.router?.routeToRecipeDetails(recipeIndex: $0)
          }
+        
+        recipeListDelegate.loadMore = { [weak self] in
+            self?.loadMore()
+         }
+
+    }
+    
+    private func loadMore() {
+        interactor?.interact(request: .loadMore)
     }
 }
 

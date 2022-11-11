@@ -20,6 +20,7 @@ class SearchRecipeInteractor: SearchRecipeDataStore {
     let presenter: SearchRecipePresenterProtocol
     let service: RecipeGateway
     var recipes = [RecipeEntity]()
+    var currentPage = 1
     
     init(presenter: SearchRecipePresenterProtocol,
          service: RecipeGateway) {
@@ -40,6 +41,8 @@ extension SearchRecipeInteractor: SearchRecipeInteractorProtocol {
             
         case .addSearchSuggestion(let search):
             saveLastSearch(query: search)
+        case .loadMore:
+            print("get more recipes")
         }
     }
     
@@ -75,5 +78,5 @@ extension SearchRecipeInteractor: SearchRecipeInteractorProtocol {
             UserDefaults.standard.set(lastSearches,
                                       forKey: Constants.UserDefaultsKeys.lastSearches)
         }
-
+    
 }

@@ -12,6 +12,7 @@ enum SearchRecipeModel {
         case viewLoaded
         case getRecipes(query: String, filter: Filter?)
         case addSearchSuggestion(search: String)
+        case loadMore
     }
     
     enum Response {
