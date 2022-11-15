@@ -7,7 +7,7 @@ target 'iOS_Recipe' do
 
   # Pods for iOS_Recipe
   
-    pod 'Kingfisher', '~> version6-xcode13'
+    pod 'Kingfisher'
     pod 'Alamofire'
 
 end
