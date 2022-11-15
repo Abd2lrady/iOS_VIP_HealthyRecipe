@@ -1,0 +1,37 @@
+input_dir: iOS_Recipe/Resources/Assets
+output_dir: iOS_Recipe/Resources/Assets
+
+
+colors:
+  - inputs: Colors/Colors.txt
+    outputs:
+        templateName: swift5
+        output: Colors/Colors.swift
+        params:
+            enumName: Colors
+
+xcassets:
+  - inputs: Images
+    outputs:
+        templateName: swift5
+        output: Images/Assets.swift
+        params:
+            enumName: Images
+      
+fonts:
+  - inputs: Fonts
+    outputs:
+        templateName: swift5
+        output: Fonts/Fonts.swift
+        params:
+            enumName: Fonts
+         
+strings:
+  - inputs: Strings/Localizable.strings
+    outputs:
+        templateName: structured-swift4
+        output: Strings/Strings.swift
+        params:
+            enumName: Strings
+
+            
