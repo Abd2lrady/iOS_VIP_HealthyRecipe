@@ -8,6 +8,7 @@
 import Foundation
 
 enum Filter: String {
+    
     case lowSugar = "low-sugar"
     case keto = "keto-friendly"
     case vegan = "vegan"

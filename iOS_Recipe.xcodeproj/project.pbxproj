@@ -32,7 +32,6 @@
 		B43695A6291DE07F00EF54D6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43695A5291DE07F00EF54D6 /* NetworkMonitor.swift */; };
 		B43695A8291DE15900EF54D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43695A7291DE15900EF54D6 /* Constants.swift */; };
 		B43695B2291DF25D00EF54D6 /* RecipeGatway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43695B1291DF25D00EF54D6 /* RecipeGatway.swift */; };
-		B43695B7291DF2C100EF54D6 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43695B4291DF2C100EF54D6 /* Filter.swift */; };
 		B43695B8291DF2C100EF54D6 /* RecipeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43695B5291DF2C100EF54D6 /* RecipeEntity.swift */; };
 		B43695B9291DF2C100EF54D6 /* ServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43695B6291DF2C100EF54D6 /* ServerResponse.swift */; };
 		B43695BC291DF47100EF54D6 /* RemoteRecipeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43695BB291DF47100EF54D6 /* RemoteRecipeRepository.swift */; };
@@ -75,6 +74,7 @@
 		B436963B291E40AD00EF54D6 /* RecipeDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B436963A291E40AD00EF54D6 /* RecipeDetailsConfigurator.swift */; };
 		B436963D291E46D500EF54D6 /* RecipeDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B436963C291E46D500EF54D6 /* RecipeDetailsModel.swift */; };
 		B436963F291E4B5300EF54D6 /* RecipeDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B436963E291E4B5300EF54D6 /* RecipeDetailsRouter.swift */; };
+		B491CFD92923E5E700DCD624 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B491CFD82923E5E700DCD624 /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,7 +105,6 @@
 		B43695A5291DE07F00EF54D6 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		B43695A7291DE15900EF54D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B43695B1291DF25D00EF54D6 /* RecipeGatway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeGatway.swift; sourceTree = "<group>"; };
-		B43695B4291DF2C100EF54D6 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = ../../../../../iOS_HealthyRecipe/iOS_HealthyRecipe/Model/Filter.swift; sourceTree = "<group>"; };
 		B43695B5291DF2C100EF54D6 /* RecipeEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeEntity.swift; sourceTree = "<group>"; };
 		B43695B6291DF2C100EF54D6 /* ServerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerResponse.swift; sourceTree = "<group>"; };
 		B43695BB291DF47100EF54D6 /* RemoteRecipeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRecipeRepository.swift; sourceTree = "<group>"; };
@@ -148,6 +147,7 @@
 		B436963A291E40AD00EF54D6 /* RecipeDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsConfigurator.swift; sourceTree = "<group>"; };
 		B436963C291E46D500EF54D6 /* RecipeDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsModel.swift; sourceTree = "<group>"; };
 		B436963E291E4B5300EF54D6 /* RecipeDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsRouter.swift; sourceTree = "<group>"; };
+		B491CFD82923E5E700DCD624 /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		B9BE2A9D8145EACB7C24CF83 /* Pods-iOS_Recipe.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Recipe.develop.xcconfig"; path = "Target Support Files/Pods-iOS_Recipe/Pods-iOS_Recipe.develop.xcconfig"; sourceTree = "<group>"; };
 		FCD06713959CA903AA544237 /* Pods_iOS_Recipe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Recipe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,7 +170,6 @@
 				B9BE2A9D8145EACB7C24CF83 /* Pods-iOS_Recipe.develop.xcconfig */,
 				76E98C0E6560898B6ABA3A84 /* Pods-iOS_Recipe.production.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -395,7 +394,7 @@
 		B43695B3291DF2B200EF54D6 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				B43695B4291DF2C100EF54D6 /* Filter.swift */,
+				B491CFD82923E5E700DCD624 /* Filter.swift */,
 				B43695B5291DF2C100EF54D6 /* RecipeEntity.swift */,
 				B43695B6291DF2C100EF54D6 /* ServerResponse.swift */,
 			);
@@ -859,10 +858,10 @@
 				B4369615291E0B8000EF54D6 /* SearchRecipeModel.swift in Sources */,
 				B436959C291DD94800EF54D6 /* Configuration.swift in Sources */,
 				B43695F7291E04DE00EF54D6 /* UIView+ActivityIndicator.swift in Sources */,
+				B491CFD92923E5E700DCD624 /* Filter.swift in Sources */,
 				B4369637291E3F6E00EF54D6 /* RecipeDetailsPresenter.swift in Sources */,
 				B43695A8291DE15900EF54D6 /* Constants.swift in Sources */,
 				B43695B2291DF25D00EF54D6 /* RecipeGatway.swift in Sources */,
-				B43695B7291DF2C100EF54D6 /* Filter.swift in Sources */,
 				B4369597291DD48500EF54D6 /* Colors.swift in Sources */,
 				B43695D7291E040C00EF54D6 /* SearchRecipeVC+ViewProtocol.swift in Sources */,
 				B43695B9291DF2C100EF54D6 /* ServerResponse.swift in Sources */,
@@ -1034,7 +1033,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOS_Recipe//Resources/Plist/Info.plist;
+				INFOPLIST_FILE = "iOS_Recipe//Resources/Plist/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1061,7 +1060,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = iOS_Recipe//Resources/Plist/Info.plist;
+				INFOPLIST_FILE = "iOS_Recipe//Resources/Plist/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
